@@ -1,0 +1,12 @@
+<div class="jh-myproject">
+  <h4 style = "text-align: center;">자, 이제 새로운 프로젝트를 작성해보세요!</h4>
+  <%= form_tag("/project/show/#{@project.id}", method: 'patch') do %>
+    <p>
+      <%= text_field_tag 'project_name', @project.project_name, style: "width:100%" %>
+    </p>
+    <p>
+      <%= text_area_tag 'project_description', @project.project_description, style: "width:100%", rows: 15 %>
+    </p>
+    <%= submit_tag '프로젝트 수정완료', style: "margin: 0 auto; display: block; text-align:center;" %>
+  <% end %>
+</div>

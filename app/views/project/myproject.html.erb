@@ -1,0 +1,16 @@
+<div class="jh-myproject">
+  <div class="list-group">
+      <% if user_signed_in? %>
+        <a href="#" class="list-group-item list-group-item-action active">
+          <%= current_user.name %>님께서 참여 중인 프로젝트 목록
+        </a>
+        
+        <% @relations.each do |r| %>
+            <% if current_user.email == r.user_email %> 
+              <a href="/project/show/<%= r.project_id %>" class="list-group-item d-flex justify-content-between align-items-center"><%= r.project_name %>
+              <span class="badge badge-primary badge-pill"><%= r.created_at %></span></a>
+            <% end %> 
+        <% end %>
+      <% end %>
+  </div> 
+</div>

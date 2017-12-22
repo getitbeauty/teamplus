@@ -1,0 +1,12 @@
+<div class="jh-myproject">
+  <h4 style = "text-align: center;">자, 이제 새로운 프로젝트를 작성해보세요!</h4><br>
+  <%= form_tag('/project/create', method: 'post') do %>
+    <p>
+      <%= text_field_tag 'project_name', nil, style: "width:100%", placeholder: "  프로젝트의 이름을 입력하세요!" %>
+    </p>
+    <p>
+      <%= text_area_tag 'project_description', nil, style: "width:100%", rows: 10, placeholder: "  프로젝트의 설명을 입력해주세요!" %>
+    </p>
+    <%= submit_tag ' 프로젝트 만들기 ', style: "margin: 0 auto; display: block; text-align:center;" %>
+  <% end %>
+</div>

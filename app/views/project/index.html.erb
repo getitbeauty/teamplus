@@ -1,0 +1,18 @@
+
+<div class="w3-display-middle w3-margin-top w3-center">
+    <p>
+        <% if user_signed_in? %>
+            <%= current_user.name %>님, 안녕하세요!
+        <% else %>
+            당신의 팀플을 도와드립니다!
+        <% end %>
+    </p>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Team</b></span> <span class="w3-hide-small w3-text-black">Plus</span></h1><hr>
+    <h4>총 <%= @projects.count %>건의 프로젝트가 진행 중입니다.</h4>
+</div>
+
+
+    
+
+
+

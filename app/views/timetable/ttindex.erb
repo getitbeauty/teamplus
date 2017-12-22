@@ -1,0 +1,674 @@
+<% begin %>
+    <% tb = Timetablem.find(current_user.id) %>
+<div class="jh-timetable">
+    <form method='post' action='/ttcreate'>
+    <!--<div class="jumbotron jumbotron-fluid">-->
+        <div class="container">
+        <h1 class="display-4"> <%= current_user.name %>의 시간표 </h1>
+        <p class="lead"> 시간표가 바뀌셨다면 수정한 다음 다시 한 번 제출해주세요!  </p>
+        <button style="margin: 5px 5px 5px 5px;" type="submit" class="btn btn-primary">시간표를 이렇게 변경하여 저장할래요.</button>
+        <a href="#"><button style="margin: 5px 5px 5px 5px;" type="button" class="btn btn-light">이전으로</button></a><hr>
+        </div> 
+    <!--</div>-->
+    
+    
+    <table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#A9A9A9" bordercolordark="#FFFFFF" NAME="subBbs">
+
+    </table>
+    
+    
+        <table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#A9A9A9" bordercolordark="#FFFFFF" NAME="subBbs">
+            <tr height="25">
+    
+                <td>&nbsp;</td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> MON </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> TUE </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> WED </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> THU </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> FRI </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> SAT </nobr></b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> SUN </b></td>
+              
+            </tr>
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+    
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>09:00~09:30</b></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_1 %> checked <% end %> NAME='td_1_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_2 %> checked <% end %> NAME='td_1_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_3 %> checked <% end %> NAME='td_1_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_4 %> checked <% end %> NAME='td_1_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_5 %> checked <% end %> NAME='td_1_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_6 %> checked <% end %> NAME='td_1_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_1_7 %> checked <% end %> NAME='td_1_7'></td>
+               
+            </tr>
+           
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>09:30~10:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_1 %> checked <% end %> NAME='td_2_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_2 %> checked <% end %> NAME='td_2_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_3 %> checked <% end %> NAME='td_2_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_4 %> checked <% end %> NAME='td_2_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_5 %> checked <% end %> NAME='td_2_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_6 %> checked <% end %> NAME='td_2_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_2_7 %> checked <% end %> NAME='td_2_7'></td>
+            </tr>
+    
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>10:00~10:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_1 %> checked <% end %> NAME='td_3_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_2 %> checked <% end %> NAME='td_3_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_3 %> checked <% end %> NAME='td_3_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_4 %> checked <% end %> NAME='td_3_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_5 %> checked <% end %> NAME='td_3_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_6 %> checked <% end %> NAME='td_3_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_3_7 %> checked <% end %> NAME='td_3_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>10:30~11:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_1 %> checked <% end %> NAME='td_4_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_2 %> checked <% end %> NAME='td_4_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_3 %> checked <% end %> NAME='td_4_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_4 %> checked <% end %> NAME='td_4_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_5 %> checked <% end %> NAME='td_4_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_6 %> checked <% end %> NAME='td_4_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_4_7 %> checked <% end %> NAME='td_4_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>11:30~12:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_1 %> checked <% end %> NAME='td_5_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_2 %> checked <% end %> NAME='td_5_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_3 %> checked <% end %> NAME='td_5_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_4 %> checked <% end %> NAME='td_5_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_5 %> checked <% end %> NAME='td_5_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_6 %> checked <% end %> NAME='td_5_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_5_7 %> checked <% end %> NAME='td_5_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>12:00~12:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_1 %> checked <% end %> NAME='td_6_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_2 %> checked <% end %> NAME='td_6_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_3 %> checked <% end %> NAME='td_6_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_4 %> checked <% end %> NAME='td_6_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_5 %> checked <% end %> NAME='td_6_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_6 %> checked <% end %> NAME='td_6_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_6_7 %> checked <% end %> NAME='td_6_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>12:30~13:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_1 %> checked <% end %> NAME='td_7_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_2 %> checked <% end %> NAME='td_7_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_3 %> checked <% end %> NAME='td_7_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_4 %> checked <% end %> NAME='td_7_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_5 %> checked <% end %> NAME='td_7_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_6 %> checked <% end %> NAME='td_7_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_7_7 %> checked <% end %> NAME='td_7_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>13:00~13:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_1 %> checked <% end %> NAME='td_8_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_2 %> checked <% end %> NAME='td_8_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_3 %> checked <% end %> NAME='td_8_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_4 %> checked <% end %> NAME='td_8_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_5 %> checked <% end %> NAME='td_8_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_6 %> checked <% end %> NAME='td_8_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_8_7 %> checked <% end %> NAME='td_8_7'></td>
+            </tr>
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>13:30~14:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_1 %> checked <% end %> NAME='td_9_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_2 %> checked <% end %> NAME='td_9_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_3 %> checked <% end %> NAME='td_9_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_4 %> checked <% end %> NAME='td_9_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_5 %> checked <% end %> NAME='td_9_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_6 %> checked <% end %> NAME='td_9_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_9_7 %> checked <% end %> NAME='td_9_7'></td>
+            </tr>
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>14:30~15:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_1 %> checked <% end %> NAME='td_10_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_2 %> checked <% end %> NAME='td_10_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_3 %> checked <% end %> NAME='td_10_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_4 %> checked <% end %> NAME='td_10_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_5 %> checked <% end %> NAME='td_10_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_6 %> checked <% end %> NAME='td_10_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_10_7 %> checked <% end %> NAME='td_10_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>15:00~15:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_1 %> checked <% end %> NAME='td_11_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_2 %> checked <% end %> NAME='td_11_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_3 %> checked <% end %> NAME='td_11_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_4 %> checked <% end %> NAME='td_11_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_5 %> checked <% end %> NAME='td_11_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_6 %> checked <% end %> NAME='td_11_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_11_7 %> checked <% end %> NAME='td_11_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>15:30~16:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_1 %> checked <% end %> NAME='td_12_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_2 %> checked <% end %> NAME='td_12_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_3 %> checked <% end %> NAME='td_12_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_4 %> checked <% end %> NAME='td_12_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_5 %> checked <% end %> NAME='td_12_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_6 %> checked <% end %> NAME='td_12_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_12_7 %> checked <% end %> NAME='td_12_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>16:00~16:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_1 %> checked <% end %> NAME='td_13_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_2 %> checked <% end %> NAME='td_13_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_3 %> checked <% end %> NAME='td_13_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_4 %> checked <% end %> NAME='td_13_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_5 %> checked <% end %> NAME='td_13_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_6 %> checked <% end %> NAME='td_13_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_13_7 %> checked <% end %> NAME='td_13_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>16:30~17:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_1 %> checked <% end %> NAME='td_14_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_2 %> checked <% end %> NAME='td_14_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_3 %> checked <% end %> NAME='td_14_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_4 %> checked <% end %> NAME='td_14_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_5 %> checked <% end %> NAME='td_14_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_6 %> checked <% end %> NAME='td_14_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_14_7 %> checked <% end %> NAME='td_14_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>17:00~17:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_1 %> checked <% end %> NAME='td_15_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_2 %> checked <% end %> NAME='td_15_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_3 %> checked <% end %> NAME='td_15_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_4 %> checked <% end %> NAME='td_15_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_5 %> checked <% end %> NAME='td_15_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_6 %> checked <% end %> NAME='td_15_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_15_7 %> checked <% end %> NAME='td_15_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>17:30~18:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_1 %> checked <% end %> NAME='td_16_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_2 %> checked <% end %> NAME='td_16_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_3 %> checked <% end %> NAME='td_16_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_4 %> checked <% end %> NAME='td_16_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_5 %> checked <% end %> NAME='td_16_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_6 %> checked <% end %> NAME='td_16_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_16_7 %> checked <% end %> NAME='td_16_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>18:00~18:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_1 %> checked <% end %> NAME='td_17_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_2 %> checked <% end %> NAME='td_17_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_3 %> checked <% end %> NAME='td_17_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_4 %> checked <% end %> NAME='td_17_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_5 %> checked <% end %> NAME='td_17_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_6 %> checked <% end %> NAME='td_17_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_17_7 %> checked <% end %> NAME='td_17_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>18:30~19:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_1 %> checked <% end %> NAME='td_18_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_2 %> checked <% end %> NAME='td_18_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_3 %> checked <% end %> NAME='td_18_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_4 %> checked <% end %> NAME='td_18_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_5 %> checked <% end %> NAME='td_18_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_6 %> checked <% end %> NAME='td_18_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_18_7 %> checked <% end %> NAME='td_18_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>19:00~19:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_1 %> checked <% end %> NAME='td_19_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_2 %> checked <% end %> NAME='td_19_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_3 %> checked <% end %> NAME='td_19_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_4 %> checked <% end %> NAME='td_19_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_5 %> checked <% end %> NAME='td_19_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_6 %> checked <% end %> NAME='td_19_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_19_7 %> checked <% end %> NAME='td_19_7'></td>
+            </tr>
+      
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>19:30~20:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_1 %> checked <% end %> NAME='td_20_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_2 %> checked <% end %> NAME='td_20_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_3 %> checked <% end %> NAME='td_20_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_4 %> checked <% end %> NAME='td_20_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_5 %> checked <% end %> NAME='td_20_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_6 %> checked <% end %> NAME='td_20_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_20_7 %> checked <% end %> NAME='td_20_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>20:00~20:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_1 %> checked <% end %> NAME='td_21_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_2 %> checked <% end %> NAME='td_21_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_3 %> checked <% end %> NAME='td_21_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_4 %> checked <% end %> NAME='td_21_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_5 %> checked <% end %> NAME='td_21_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_6 %> checked <% end %> NAME='td_21_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_21_7 %> checked <% end %> NAME='td_21_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>20:30~21:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_1 %> checked <% end %> NAME='td_22_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_2 %> checked <% end %> NAME='td_22_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_3 %> checked <% end %> NAME='td_22_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_4 %> checked <% end %> NAME='td_22_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_5 %> checked <% end %> NAME='td_22_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_6 %> checked <% end %> NAME='td_22_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_22_7 %> checked <% end %> NAME='td_22_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>21:00~21:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_1 %> checked <% end %> NAME='td_23_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_2 %> checked <% end %> NAME='td_23_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_3 %> checked <% end %> NAME='td_23_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_4 %> checked <% end %> NAME='td_23_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_5 %> checked <% end %> NAME='td_23_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_6 %> checked <% end %> NAME='td_23_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_23_7 %> checked <% end %> NAME='td_23_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>21:30~22:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_1 %> checked <% end %> NAME='td_24_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_2 %> checked <% end %> NAME='td_24_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_3 %> checked <% end %> NAME='td_24_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_4 %> checked <% end %> NAME='td_24_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_5 %> checked <% end %> NAME='td_24_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_6 %> checked <% end %> NAME='td_24_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_24_7 %> checked <% end %> NAME='td_24_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>22:30~23:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_1 %> checked <% end %> NAME='td_25_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_2 %> checked <% end %> NAME='td_25_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_3 %> checked <% end %> NAME='td_25_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_4 %> checked <% end %> NAME='td_25_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_5 %> checked <% end %> NAME='td_25_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_6 %> checked <% end %> NAME='td_25_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;' <% if tb.td_25_7 %> checked <% end %> NAME='td_25_7'></td>
+            </tr>
+        </table>
+        </form>
+    
+    <!--</div>-->
+</div>
+
+
+<% rescue %>
+<div class="jh-timetable">
+    <form method='post' action='/ttcreate'>
+    <!--<div class="jumbotron jumbotron-fluid">-->
+    <div class="container">
+        <h1 class="display-4"> 나의 시간표 등록하기 </h1>
+        <p class="lead">  <%= current_user.name %>님, 더이상 언제 만나야 할지 걱정하지 마세요! <br>아래 시간표에 팀플이 가능한 모든 시간을 체크해주시면, 저희가 찾아드립니다  </p>
+        <button style="margin: 5px 5px 5px 5px;" type="submit" class="btn btn-primary">아래 시간표로 저장할래요!</button>
+        <a href="#"><button style="margin: 5px 5px 5px 5px;" type="button" class="btn btn-light">이전으로</button></a><hr>
+    
+    </div> 
+    <!--</div>-->
+    
+    <table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#A9A9A9" bordercolordark="#FFFFFF" NAME="subBbs">
+
+    </table>
+    
+    
+        <table width="100%" border="1" cellpadding="3" cellspacing="0" bordercolor="#A9A9A9" bordercolordark="#FFFFFF" NAME="subBbs">
+            <tr height="25">
+    
+                <td>&nbsp;</td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> MON </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> TUE </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> WED </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> THU </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> FRI </b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> SAT </nobr></b></td>
+                <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> SUN </b></td>
+              
+            </tr>
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+    
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>09:00~09:30</b></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_1_7'></td>
+               
+            </tr>
+           
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>09:30~10:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_2_7'></td>
+            </tr>
+    
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>10:00~10:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_3_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>10:30~11:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_4_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>11:30~12:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_5_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>12:00~12:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_6_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>12:30~13:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_7_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>13:00~13:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_8_7'></td>
+            </tr>
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>13:30~14:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_9_7'></td>
+            </tr>
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>14:30~15:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_10_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>15:00~15:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_11_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>15:30~16:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_12_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>16:00~16:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_13_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>16:30~17:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_14_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>17:00~17:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_15_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>17:30~18:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_16_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>18:00~18:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_17_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>18:30~19:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_18_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>19:00~19:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_19_7'></td>
+            </tr>
+      
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>19:30~20:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_20_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>20:00~20:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_21_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>20:30~21:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_22_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>21:00~21:30</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_23_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>21:30~22:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_24_7'></td>
+            </tr>
+    
+            <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+                <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>22:30~23:00</b></td>
+    
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_1'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_2'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_3'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_4'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_5'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_6'></td>
+                <td bgcolor='' title='가능' style='text-align:center;' width='55'><INPUT TYPE="checkbox"   style='width:25px;height:25px;'  NAME='td_25_7'></td>
+            </tr>
+        </table>
+
+    </form>
+
+</div>
+<% end %>

@@ -1,0 +1,324 @@
+<div class="jh-timetable">
+    <button style="margin: 5px 5px 5px 5px;" type="button" class="btn btn-primary">현재 시간표 저장하기</button>
+    <a href="#"><button style="margin: 5px 5px 5px 5px;" type="button" class="btn btn-light">초기화 하기</button></a>
+
+    <INPUT TYPE="hidden" NAME="room" id="room">
+    <table width="80%" border="1" cellpadding="3" cellspacing="0" bordercolor="#A9A9A9" bordercolordark="#FFFFFF" id="subBbs">
+
+    </table>
+
+    <table width="80%" border="1" cellpadding="3" cellspacing="0" bordercolor="#A9A9A9" bordercolordark="#FFFFFF" id="subBbs">
+        <tr height="25">
+
+            <td>&nbsp;</td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> MON </b></td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> TUE </b></td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> WED </b></td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> THU </b></td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> FRI </b></td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> SAT </nobr></b></td>
+            <td valign=middle style='font-size:12pt;background:#DEE0DE;text-align:center;' width='55'><b><nobr> SUN </b></td>
+          
+        </tr>
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>09:00~09:30</b></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_1-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+           
+        </tr>
+       
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>09:30~10:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_2-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>10:00~10:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_3-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>10:30~11:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_4-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>11:30~12:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_5-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>12:00~12:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_6-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>12:30~13:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_7-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>13:00~13:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_8-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>13:30~14:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_9-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>14:30~15:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_10-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>15:00~15:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_11-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>15:30~16:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_12-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>16:00~16:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_13-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>16:30~17:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_14-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>17:00~17:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_15-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>17:30~18:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_16-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>18:00~18:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_17-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>18:30~19:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_18-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>19:00~19:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_19-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+  
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>19:30~20:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_20-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>20:00~20:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_21-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>20:30~21:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_22-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>21:00~21:30</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_23-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>21:30~22:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_24-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+
+        <tr height='20' bgColor='#F7F7F7' onmouseover="this.style.backgroundColor='#FFCCFF'" onmouseout="this.style.backgroundColor='#F7F7F7'">
+            <td style='font-size:10pt;text-align:center;' width='100'><b><nobr>22:30~23:00</b></td>
+
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-1' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-2' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-3' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-4' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-5' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-6' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+            <td bgcolor='' title='가능' style='text-align:center;' id='td_25-7' width='55'><INPUT TYPE="checkbox" NAME="chk[]" style='width:25px;height:25px;' value='1|11' onClick='chk_fn(this,this.checked)'></td>
+        </tr>
+    </table>
+
+</div>

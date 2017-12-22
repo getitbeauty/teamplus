@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ 
+ */
+ 
+.field{
+    width: 100%;
+    text-align: center;
+}
+ 
+.action {
+    width: 100%;
+    text-align: center;
+}
+
+.jh-timetable {
+    width: 700px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin : auto;
+    /*border: 1px solid #bcbcbc;*/
+}
+
+.jh-devise {
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    /*border: 1px solid #bcbcbc;*/
+}
+
+.jh-container {
+    width: 1100px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+    /*border: 1px solid #bcbcbc;*/
+}
+.jh-myproject {
+    width: 700px;
+    margin: 0px auto;
+    padding: 35px;
+}
+.jh-content {
+    width: 670px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: left;
+    /*border: 1px solid #bcbcbc;*/
+}
+.jh-sidebar {
+    width: 310px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    /*border: 1px solid #bcbcbc;*/
+}
+
+.jh-sidebar-content {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /*float: right;*/
+    border: 1px solid #bcbcbc;
+}
